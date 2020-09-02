@@ -30,7 +30,7 @@ else document.addEventListener("DOMContentLoaded", callback);
 }
 ready(() => {
 let number = numberInput.value.toString() || '123'
-    fetch('https://numbersapi.com/'+ number +'/trivia')
+    fetch('http://numbersapi.com/'+ number +'/trivia')
    .then(response => response.text())
         .then(data => {
             if(number != ''){
