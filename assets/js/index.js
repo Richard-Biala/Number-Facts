@@ -7,9 +7,9 @@ numberInput.addEventListener('input', getFactFetch);
 
 
 function getFactFetch (){
-    let number = numberInput.value;
+    let number = numberInput.value.toString();
 
-    fetch('http://numbersapi.com/' +number)
+    fetch('http://numbersapi.com/' +number +'/trivia')
         .then(response => response.text())
         .then(data => {
             if(number != ''){
